@@ -22,10 +22,10 @@ app.set("views", template_path);
 hbs.registerPartials(partials_path);
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("register");
 });
 
-app.get("/register", (reg, res) => {
+app.get("/register", (req, res) => {
   res.render("register");
 });
 
